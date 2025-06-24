@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Entertainment - Amazon</title>
+  <style>
+    body {
+      font-family: "Amazon Ember", Arial, sans-serif;
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    .hero-section {
+      background: url('images/amazon-hero.jpg') center/cover no-repeat;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+    .header-hero {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    .login-btn {
+      background: transparent;
+      color: #fff;
+      border: 1px solid #fff;
+      padding: 8px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .hero-content {
+      max-width: 800px;
+      margin-top: -50px;
+    }
+    .hero-content img {
+      width: 250px;
+      margin-bottom: 20px;
+    }
+    .hero-content h1 {
+      font-size: 3em;
+      margin: 0 0 10px;
+    }
+    .hero-content p {
+      font-size: 1.2em;
+      line-height: 1.5;
+      margin: 0 0 30px;
+    }
+    .signup-btn {
+      background: #fff;
+      color: #000;
+      padding: 15px 40px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+    .blue-section {
+      background-color: #007bff;
+      border-radius: 20px;
+      margin: 20px;
+    }
+    .blue-section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .blue-section .icon {
+      font-size: 5em;
+      margin: 0 0 20px;
+      display: block;
+    }
+    .blue-section p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin: 0 20px 30px;
+    }
+    .movie-covers {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .movie-covers img {
+      width: 120px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    .cancel-icon {
+      font-size: 5em;
+      margin-bottom: 20px;
+    }
+    .compatible-devices {
+      padding-bottom: 100px;
+    }
+    .compatible-devices h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    .compatible-devices p {
+      font-size: 1.1em;
+      margin-bottom: 40px;
+    }
+    .device-list {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 50px;
+      position: relative;
+      padding: 0 50px;
+    }
+    .device-icon {
+      font-size: 8em;
+      margin-bottom: 10px;
+    }
+    .device-label {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    .device-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 3em;
+      color: #fff;
+      cursor: pointer;
+    }
+    .device-arrow.left { left: 10px; }
+    .device-arrow.right { right: 10px; }
+    footer {
+      background: #000;
+      color: #aaa;
+      padding: 30px 20px;
+      font-size: 0.9em;
+      border-top: 1px solid #333;
+    }
+    footer nav a {
+      color: #aaa;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    footer nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero-section">
+    <header class="header-hero">
+      <a href="#" class="login-btn">Login</a>
+    </header>
+    <div class="hero-content">
+      <img src="images/amazon_prime_entertainment_logo.png" alt="Prime Entertainment Logo">
+      <h1>Your favorite content, in one place.</h1>
+      <p>Enjoy Prime Video and Twitch Prime with your Amazon Prime subscription on one entertainment hub.</p>
+      <a href="#" class="signup-btn">Sign Up on Amazon</a>
+    </div>
+  </section>
+
+  <section class="blue-section">
+    <h2>Live Content at the Palm of Your Hand</h2>
+    <div class="icon">📺</div>
+    <p>With 4K HDR quality, enjoy live sports and e-sports events.</p>
+  </section>
+
+  <section class="blue-section">
+    <h2>Prefer On-Demand? We’ve Got You.</h2>
+    <div class="movie-covers">
+      <img src="images/space_sweepers.jpg" alt="Space Sweepers">
+      <img src="images/red_dot.jpg" alt="Red Dot">
+      <img src="images/soul.jpg" alt="Soul">
+      <img src="images/tentacles.jpg" alt="Tentacles">
+      <img src="images/sentinelle.jpg" alt="Sentinelle">
+    </div>
+  </section>
+
+  <section class="blue-section">
+    <h2>Cancel Anytime, Anywhere</h2>
+    <div class="cancel-icon">✖</div>
+    <p>No contracts, no fees—cancel whenever you want.</p>
+  </section>
+
+  <section class="compatible-devices">
+    <h2>Compatible Devices</h2>
+    <p>Watch on a range of devices:</p>
+    <div class="device-list">
+      <span class="device-arrow left">‹</span>
+      <div class="device-item"><div class="device-icon">📱</div><div class="device-label">iPhone</div></div>
+      <div class="device-item"><div class="device-icon">💻</div><div class="device-label">Mac</div></div>
+      <div class="device-item"><div class="device-icon">🖥️</div><div class="device-label">PC</div></div>
+      <span class="device-arrow right">›</span>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Sales & Refunds</a>
+      <a href="#">Legal</a>
+      <a href="#">Site Map</a>
+    </nav>
+  </footer>
+
+</body>
+</html>
